@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "non_playble",
+    "path": "folders/Objects/non_playble.yy",
   },
   "resourceVersion": "1.0",
   "name": "Obj_Grama",

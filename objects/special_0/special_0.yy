@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "Spexial_0_sprite",
+    "path": "sprites/Spexial_0_sprite/Spexial_0_sprite.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -19,16 +22,15 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "playble",
-    "path": "folders/Objects/playble.yy",
+    "name": "non_playble",
+    "path": "folders/Objects/non_playble.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Obj_camera",
+  "name": "special_0",
   "tags": [],
   "resourceType": "GMObject",
 }

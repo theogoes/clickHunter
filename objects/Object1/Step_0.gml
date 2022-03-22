@@ -2,7 +2,6 @@
 key_right = keyboard_check(ord("D")) //direita
 key_left = keyboard_check(ord("A")) //esquerda
 key_up = keyboard_check(ord("W")) //pulo
-disparar = keyboard_check(vk_space) //atirar
 
 #endregion
 
@@ -39,14 +38,8 @@ vspd -=8;
 }
 #endregion
 
-#region ATIRAR
-if(key_right) direcao = 0;
+#region DIRECTION CHECK
 if(key_left) direcao = 180;
-if(disparar && atirar){
-	if(direcao == 0)var projetil = instance_create_layer(x, y, layer, projectile);
-	if(direcao == 180) var projetil = instance_create_layer(x, y, layer, projectile);
-	projetil.direction = direcao;
-	atirar = false;
-}
+if(key_right) direcao = 0;
 #endregion
 
