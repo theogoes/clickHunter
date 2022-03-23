@@ -2,7 +2,10 @@
 key_right = keyboard_check(ord("D")) //direita
 key_left = keyboard_check(ord("A")) //esquerda
 key_up = keyboard_check(ord("W")) //pulo
-
+#endregion
+#region DIRECTION CHECK
+if(key_left) direcao = 180;
+if(key_right) direcao = 0;
 #endregion
 
 #region MOVIMENTOS 
@@ -38,8 +41,17 @@ vspd -=8;
 }
 #endregion
 
-#region DIRECTION CHECK
-if(key_left) direcao = 180;
-if(key_right) direcao = 0;
+#region SPECIAL ANIMATION
+if (global.currentSpecial >= 5 && global.currentSpecial <=9.9){
+	show_debug_message("oi")
+	sprite_index = Spr_Clicker_special_1;
+}else if (global.currentSpecial >= 10){
+	sprite_index = Spr_Clicker_special_2;
+}else{
+	sprite_index = Spr_Clicker;
+}
+
 #endregion
+
+
 

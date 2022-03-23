@@ -7,13 +7,13 @@ space = keyboard_check(vk_space);
 
 #region SPECIAL CODE
 if(space){
-	current_special += rate;	
+	global.currentSpecial += rate;	
 }else{
-	if(current_special > 0) current_special -=rate;	
+	if(global.currentSpecial > 0) global.currentSpecial -=rate;	
 }
 
-if(current_special >= target_special){
-	current_special = target_special;	
+if(global.currentSpecial >= target_special){
+	global.currentSpecial = target_special;	
 }
 
 #endregion
